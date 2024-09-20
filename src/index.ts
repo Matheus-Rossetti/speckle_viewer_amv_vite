@@ -16,7 +16,9 @@ async function main() {
     /** Initialise the viewer */
     await viewer.init();
 
-    viewer.resolutionScale = 0.5;
+
+    // min res = x
+    viewer.resolutionScale = 0.4;
 
     /** Add the stock camera controller extension */
     viewer.createExtension(CameraController);
